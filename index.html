@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Js_Task-6</title>
+
+    <script>
+      function sort() {
+        var str = document.getElementById("input").value;
+        var sorted = str.split("").sort().join("");
+        document.getElementById("answer").innerText = "Result: " + sorted;
+      }
+    </script>
+  </head>
+  <body>
+    <label for="string">Enter a String: </label>
+    <input type="text" name="string" id="input" />
+    <input type="button" value="Submit" onclick="sort()" />
+    <br />
+    <p id="answer"></p>
+  </body>
+</html>
+<!--Coded by Sourav-->
